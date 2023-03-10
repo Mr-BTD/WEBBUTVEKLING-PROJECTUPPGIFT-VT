@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World App</title>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBumiqJPhjb0pujrJrcx5yeGoouEvP2OBo",
+            authDomain: "skol-webserver.firebaseapp.com",
+            projectId: "skol-webserver",
+            storageBucket: "skol-webserver.appspot.com",
+            messagingSenderId: "370758124878",
+            appId: "1:370758124878:web:fee1b0919848fb0019ca1f",
+            measurementId: "G-JQX1B103B7"
+        }; 
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+
+        let posts = [
+            {
+                title: "Hello World!",
+                body: "Hello World!",
+                posted: "2023-02-12 12:37:45",
+                user: {
+                    username: "DAVIDEO",
+                    email: "john.doe@gmail.com",
+                    profileImg: "/images/david.jpg"
+                }
+                },
+
+            {}
+        ]
+    </script>
+  </body>
+</html>
+
+<!-- // For Firebase JS SDK v7.20.0 and later, measurementId is optional
