@@ -9,30 +9,122 @@
 }
 
 body {
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  margin-bottom: 5rem;
+  color: white;
+  background-color: rgba(5, 49, 65, 1);
+  box-shadow: 1px -2px 30px 31px rgba(5, 49, 65, 1);
+  -webkit-box-shadow: 1px -2px 30px 31px rgba(5, 49, 65, 1);
+  -moz-box-shadow: 1px -2px 30px 31px rgba(5, 49, 65, 1);
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.center-flex {
-  justify-content: center;
-  align-items: center;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 100%;
+  width: 100%;
 }
 
 #login-box {
-  background-color: blue;
-  height: 100%;
-  max-width: 30%;
-  margin: 0 auto;
+  display: flex;
+  box-shadow: 1px -2px 30px 31px rgba(8, 95, 124, 1);
+  -webkit-box-shadow: 1px -2px 30px 31px rgba(8, 95, 124, 1);
+  -moz-box-shadow: 1px -2px 30px 31px rgba(8, 95, 124, 1);
+  margin: auto;
+  min-height: 20rem;
+  min-width: 20rem;
+}
+
+/* UTILITYS */
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+/* LOGIN MENU STYLING */
+
+.login-styling {
+  background-color: rgba(8, 95, 124, 1);
+}
+
+/* BACKGROUND */
+.web-background {
+  background-color: #017979;
+  background-image: linear-gradient(
+    90deg,
+    #017979 0%,
+    #01d4d4 45%,
+    #53feff 73%,
+    #00feff 100%
+  );
+}
+/* INPUTS */
+
+/* SUBMIT Buttom */
+input[type="submit"] {
+  margin-top: 2rem;
+  height: 4rem;
+  text-align: center;
+  width: 13rem;
+  border-radius: 4rem;
+  background: #fff;
+  border: 0.2rem solid #1ecd97;
+  color: #1ecd97;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+input[type="submit"]:hover {
+  color: white;
+  background: #1ecd97;
+}
+input[type="submit"]:active {
+  letter-spacing: 0.2rem;
+}
+input[type="submit"]:after {
+  content: "SUBMIT";
+}
+.onclic {
+  width: 4rem;
+  border-color: #bbbbbb;
+  border-width: 0.3rem;
+  font-size: 0;
+  border-left-color: #1ecd97;
+  animation: rotating 2s 0.25s linear infinite;
+}
+.onclic:after {
+  content: "";
+}
+.onclic:hover {
+  color: #1ecd97;
+  background: white;
+}
+.validate {
+  font-size: 1.3rem;
+  color: white;
+  background: #1ecd97;
+}
+.validate:after {
+  font-family: "FontAwesome";
+  content: "\f00c";
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

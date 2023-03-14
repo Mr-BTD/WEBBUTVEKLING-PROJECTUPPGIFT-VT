@@ -1,0 +1,20 @@
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
